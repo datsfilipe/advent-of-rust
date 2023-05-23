@@ -3,5 +3,6 @@
 
 fn main() {
     solution_01::solution_for_01();
+    solution_01::solution_for_01_pt_2();
     solution_02::solution_for_02();
 }
