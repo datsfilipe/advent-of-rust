@@ -6,7 +6,7 @@ pub fn solution_for_02 () {
     let mut acc: u32 = 0;
     for strategy in &round_strategies {
         if strategy == &"" {
-            return;
+            break;
         }
         let moves = strategy.split(" ").collect::<Vec<&str>>();
         // I did that and I'm not proud
@@ -35,7 +35,7 @@ pub fn solution_for_02 () {
                 acc = acc + 6;
             }
         }
-        println!("{}", acc);
     }
-    // printing acc here showed nothing huh
+    println!("solution_for_02: {}", acc);
+}
 }

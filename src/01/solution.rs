@@ -12,13 +12,13 @@ pub fn solution_for_01 () {
         let mut acc: u32 = 0;
         for item in &item_array {
             if item == &"" {
-                return;
+                break;
             }
             acc = acc + item.parse::<u32>().unwrap();
         }
         if acc > highest {
             highest = acc;
         }
-        println!("{}", highest);
     }
+    println!("solution_for_01: {}", highest);
 }
